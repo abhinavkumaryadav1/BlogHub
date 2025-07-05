@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Use the correct path to your image */
+body {
+  min-height: 100vh;
+  background-image: url('./assets/Hero_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
