@@ -24,6 +24,11 @@ function Login() {
         } catch (error) {
             setError(error.message)
         }
+        if(userData) {
+    console.log("Login UserData →", userData); 
+    dispatch(authLogin(userData));
+}
+
     }
 
   return (
