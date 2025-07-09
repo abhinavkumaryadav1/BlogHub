@@ -55,10 +55,14 @@ export default function Post() {
                         </div>
                     )}
                 </div>
-                <div className="w-full mb-6">
-                    <h1 className="text-2xl font-bold">{post.title}</h1>
+                <div className="w-full flex justify-center mb-6">
+                    <div className="w-full max-w-md bg-gradient-to-r from-white/90 to-gray-100/80 rounded-xl p-1 shadow-lg border border-gray-200 flex justify-center items-center">
+                        <h1 className="text-2xl font-extrabold text-gray-800 text-center tracking-tight drop-shadow">
+                            {post.title}
+                        </h1>
+                    </div>
                 </div>
-                <div className="browser-css">
+                <div className="browser-css bg-white bg-opacity-80 rounded-lg p-6 shadow-md text-gray-900">
                     {parse(post.content)}
                     </div>
             </Container>
