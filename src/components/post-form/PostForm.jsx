@@ -17,11 +17,13 @@ export default function PostForm({ post }) {
 
     const navigate = useNavigate();
     const userData = useSelector((state) => state.auth.userData);
-    console.log("userData ", userData);
-    console.log("userData.$id:", userData?.$id);
+    // console.log("userData ", userData);
+    // console.log("userData.$id:", userData?.$id);
 
 
     const submit = async (data) => {
+        // console.log("form -> " ,data.content);
+        
         if (post) {
             const file = data.image[0] ? await appwriteService.uploadFile(data.image[0]) : null;
 
