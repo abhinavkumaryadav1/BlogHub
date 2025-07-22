@@ -35,26 +35,25 @@ export default function Post() {
     return post ? (
         <div className="py-8">
             <Container>
-                <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
-                    <img 
-                        src={appwriteService.getFilePreview(post.featuredImage)}
-                        alt={post.title}
-                        className="rounded-xl w-1/3"
-                    />
+               <div className="w-full flex flex-col items-center mb-6 border rounded-xl p-4 bg-white/70 shadow">
+  {/* Image */}
+  <img 
+    src={appwriteService.getFilePreview(post.featuredImage)}
+    alt={post.title}
+    className="rounded-xl w-full max-w-md object-cover"
+  />
 
-                    {isAuthor && (
-                        <div className="absolute right-6 top-6">
-                            <Link to={`/edit-post/${post.$id}`}>
-                                <Button bgColor="bg-green-500" className="mr-3">
-                                    Edit
-                                </Button>
-                            </Link>
-                            <Button bgColor="bg-red-500" onClick={deletePost}>
-                                Delete
-                            </Button>
-                        </div>
-                    )}
-                </div>
+  {/* Buttons below image */}
+  {isAuthor && (
+    <div className="mt-4 flex gap-3">
+      <Link to={`/edit-post/${post.$id}`}>
+        <Button bgColor="bg-green-500">Edit</Button>
+      </Link>
+      <Button bgColor="bg-red-500" onClick={deletePost}>Delete</Button>
+    </div>
+  )}
+</div>
+
                 <div className="w-full flex justify-center mb-6">
                     <div className="w-full max-w-md bg-gradient-to-r from-white/90 to-gray-100/80 rounded-xl p-1 shadow-lg border border-gray-200 flex justify-center items-center">
                         <h1 className="text-2xl font-extrabold text-gray-800 text-center tracking-tight drop-shadow">
