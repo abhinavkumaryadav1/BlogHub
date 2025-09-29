@@ -1,6 +1,6 @@
 # 🚀 BlogHub: A Modern Blogging Platform
 
-Welcome to **BlogHub**, a full-featured blogging application built with a modern tech stack. This platform provides a seamless experience for users to create, read, update, and delete their blog posts, all secured with a robust authentication system. The project leverages the power of React, Redux Toolkit, and Appwrite to deliver a fast, scalable, and user-friendly application.
+Welcome to **BlogHub**, a full-featured blogging application built with a modern tech stack. This platform provides a seamless experience for users to create, read, update, and delete their blog posts, all secured with a robust authentication system. The project leverages the power of React, Redux Toolkit, and Appwrite to deliver a fast, scalable, and user-friendly application. <br>
 LIVE: https://blog-hub-livid-two.vercel.app/
 
 ---
